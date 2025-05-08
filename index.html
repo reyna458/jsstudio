@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Javascript Assignment 1</title>
+        <link rel="stylesheet" href="styles/global.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+        </style>
+    </head>
+    <body>
+        <header id="head">
+            <h1>Ash Reynolds</h1>
+            <h2 id="h21">CD Studio Javascript</h2>
+            <h2 id="h22">Parsons School of Design Spring 2025</h2>
+        </header>
+    <main>
+        <section id="links">
+            <h2 id="h23">Links</h2>
+            <hr>
+
+            <div class="link1" id="div">
+                <a href="#" target="_blank"><h3>Project 1</h3></a>
+                <hr>
+                <h4>Changing States</h4>
+                <p>Make a website that’s principle focus is on the changing between states. The states you choose can be a binary (day vs. night, messy vs. clean, wet vs. dry, hot vs. cold etc.) or exist more on a spectrum (the spectrum of color, temperature, wealth, sound volume, emotion etc.).</p>
+            </div>
+
+            <div class="link2" id="div2">
+                <a href="#" target="_blank"><h3>Project 2</h3></a>
+                <hr>
+                <h4>Generative Tool</h4>
+                <p>In this project, you will create your own tool using programming concepts like variables, loops, and conditionals. Just like the tools mentioned as examples, your tool will take some form of user input as material and transform it into a visual output. We will look at examples together in class</p>
+            </div>
+
+            <div class="link3" id="div3">
+                <a href="#" target="_blank"><h3>Project 3</h3></a>
+                <hr>
+                <h4>Sender Receiver</h4>
+                <p>Design and develop a website which incorporates an external data feed, using one of the APIs discussed in class. You may also use another API or service that you have researched independently, so long as it provides a live data stream to work with. Consider how your specific design logic might change the meaning of said data, and how the user may (or may not) interact with the feed as they engage with your site.</p>
+            </div>
+        </section>
+        <script>
+            // i am aware this is an inasnely inefficient way to do this! here to learn lol // 
+            const divhover = document.getElementById('div');
+
+            console.log(divhover)
+
+            divhover.addEventListener('mouseover', function() {
+            if(divhover) divhover.classList.add('divactive');
+            });
+            
+            divhover.addEventListener('mouseout', function() {
+            if(divhover) divhover.classList.remove('divactive');});
+
+            const divhover2 = document.getElementById('div2');
+
+            console.log(divhover2)
+
+            divhover2.addEventListener('mouseover', function() {
+            if(divhover2) divhover2.classList.add('divactive');
+            });
+            
+            divhover2.addEventListener('mouseout', function() {
+            if(divhover2) divhover2.classList.remove('divactive');});
+
+            const divhover3 = document.getElementById('div3');
+
+            console.log(divhover3)
+
+            divhover3.addEventListener('mouseover', function() {
+            if(divhover3) divhover3.classList.add('divactive');
+            });
+            
+            divhover3.addEventListener('mouseout', function() {
+            if(divhover3) divhover3.classList.remove('divactive');});
+
+            const headhover = document.getElementById('head');
+
+            console.log(headhover)
+
+            headhover.addEventListener('mouseover', function() {
+            if(headhover) headhover.classList.add('headactive');
+            });
+
+            headhover.addEventListener('mouseout', function() {
+            if(headhover) headhover.classList.remove('headactive');});
+        </script>
+    </main>
+    <script src="scripts/script.js"></script>
+    </body>
+</html>
